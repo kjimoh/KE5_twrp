@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 #$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from TECNO-KE5 device
-$(call inherit-product, device/tecno/TECNO-KE5/device.mk)
+$(call inherit-product, device/tecno/TECNO/device.mk)
 
-PRODUCT_DEVICE := TECNO-KE5
-PRODUCT_NAME := twrp_TECNO-KE5
+PRODUCT_DEVICE := TECNO
+PRODUCT_NAME := twrp_TECNO
 PRODUCT_BRAND := TECNO
 PRODUCT_MODEL := TECNO KE5
 PRODUCT_MANUFACTURER := tecno
