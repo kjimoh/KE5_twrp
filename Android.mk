@@ -5,8 +5,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+#LOCAL_PATH := $(call my-dir)
+
+#ifeq ($(TARGET_DEVICE),TECNO-KE5)
+#include $(call all-subdir-makefiles,$(LOCAL_PATH))
+#endif
+
+
+ifneq ($(filter TECNO-KE5, $(TARGET_DEVICE)),)
+
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),TECNO)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
 endif

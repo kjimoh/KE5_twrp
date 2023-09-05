@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=TECNO
+DEVICE=TECNO-KE5
 VENDOR=tecno
 
 # Load extract_utils and do some sanity checks

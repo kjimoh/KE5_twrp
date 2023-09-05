@@ -42,12 +42,3 @@ auto                      vfat     /devices/platform/mt_usb*                    
 /dtbo                     emmc     /dev/block/platform/bootdevice/by-name/dtbo              flags=display=dtbo
 /vbmeta                   emmc     /dev/block/platform/bootdevice/by-name/vbmeta            flags=display=vbmeta
 /tkv                      emmc     /dev/block/platform/bootdevice/by-name/tkv               flags=display=tkv
-# Removable storage
-/external_sd              vfat     /dev/block/mmcblk1p1 /dev/block/mmcblk1                  flags=storage;wipeingui;removable
-/usb-otg                  auto     /dev/block/sda1 /dev/block/sda                           flags=display="USB-OTG";storage;wipeingui;removable
-
-
-
-
-
-
