@@ -18,7 +18,7 @@ before_install:
 <<<<<<< HEAD
   - echo "$DOCKER_PASSWORD" | docker login -u "$JIMOHATDOCKER" --password-stdin 2>/dev/null
 =======
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin 2>/dev/null
+  - echo "$DOCKER_PASSWORD" | docker login -u "$JIMOHATDOCKER" --password-stdin 2>/dev/null
 >>>>>>> 7803330941ee379da3d3777a307d7aa1e00c2dc6
   - docker pull fr3akyphantom/droid-builder:latest
 before_script:
@@ -28,7 +28,7 @@ before_script:
   # Uncomment & Use below line If Building for Lollipop-based Devices
   # - TWRP_SOURCE="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-5.1-norepo-20201103.tzst"
   # Use below line If Building for Marshmallow-based Devices
-  - TWRP_SOURCE="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-6.0-norepo-20201103.tzst"
+  #- TWRP_SOURCE="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-6.0-norepo-20201103.tzst"
   # Uncomment & Use below line If Building for Nougat-based Devices
   # - TWRP_SOURCE="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-7.1-norepo-20201103.tzst"
   - aria2c -x16 -s8 --console-log-level=error --summary-interval=0 "${TWRP_SOURCE}" -o twrp.tzst || wget -q --show-progress --progress=bar:force "${TWRP_SOURCE}" -O twrp.tzst
