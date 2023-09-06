@@ -15,7 +15,11 @@ addons:
 services:
   - docker
 before_install:
+<<<<<<< HEAD
   - echo "$DOCKER_PASSWORD" | docker login -u "$JIMOHATDOCKER" --password-stdin 2>/dev/null
+=======
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin 2>/dev/null
+>>>>>>> 7803330941ee379da3d3777a307d7aa1e00c2dc6
   - docker pull fr3akyphantom/droid-builder:latest
 before_script:
   - cd $HOME && mkdir twrp
