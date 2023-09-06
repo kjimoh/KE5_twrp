@@ -99,7 +99,7 @@ PLATFORM_VERSION := 16.1.0
 BOARD_VNDK_VERSION := current
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+#TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
