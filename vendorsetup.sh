@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo twrp_TECNO-KE5-user
-add_lunch_combo twrp_TECNO-KE5-userdebug
-add_lunch_combo twrp_TECNO-KE5-eng
+add_lunch_combo omni_TECNO-KE5-user
+add_lunch_combo omni_TECNO-KE5-userdebug
+add_lunch_combo omni_TECNO-KE5-eng
