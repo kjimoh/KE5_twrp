@@ -5,6 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo twrp_TECNO-KE5-user
-add_lunch_combo twrp_TECNO-KE5-userdebug
-add_lunch_combo twrp_TECNO-KE5-eng
+LOCAL_PATH := device/tecno/TECNO-KE5
