@@ -5,10 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_TECNO.mk
+LOCAL_PATH := $(call my-dir)
 
-COMMON_LUNCH_CHOICES := \
-    twrp_TECNO-user \
-    twrp_TECNO-userdebug \
-    twrp_TECNO-eng
+ifeq ($(TARGET_DEVICE),TECNO-KE5)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif

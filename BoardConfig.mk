@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/TECNO-KE5
+DEVICE_PATH := device/tecno/TECNO
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -44,7 +44,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := TECNO-KE5_defconfig
-TARGET_KERNEL_SOURCE := kernel/tecno/TECNO-KE5
+TARGET_KERNEL_SOURCE := kernel/tecno/TECNO
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
